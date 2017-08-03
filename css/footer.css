@@ -1,0 +1,64 @@
+footer
+{
+    background-image: url(../img/background-texture/dark-triangles.png);
+color:white;
+}
+
+footer>.container-fluid>.row>.col-lg-4
+{
+    text-align: center;
+}
+
+footer>.container-fluid>.row>.col-lg-4>h1,h3
+{
+    color:white;
+    padding: 0px;
+}
+
+
+h2,h4
+{
+    color:rgba(255,250,255,.6);
+    
+}
+
+footer>.container-fluid>.row>.col-lg-3>ul
+{
+    list-style: none;
+    font-size: 1.2em;
+}
+
+footer>.container-fluid>.row>.col-lg-3>ul>li>a
+{
+   color:rgba(255,255,255,.4);
+}
+
+footer>.container-fluid>.row>.col-lg-12>p
+{
+    text-align: center;
+}
+
+footer>.container-fluid>.row>.col-lg-3>form>div>input
+{
+    background:rgba(255,255,255,.8);
+}
+      
+
+  #map {
+        height: 200px;
+        width: 100%;
+      border-radius: 7px;
+      box-shadow: 2px 2px 2px;
+       }
+
+.follow>a>i
+{
+    margin-left:13px;
+    color:rgba(255,255,255,.5);
+    transition: all .5s;
+}
+
+.follow>a>i:hover
+{
+    color:lightskyblue;
+}

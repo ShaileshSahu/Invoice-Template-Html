@@ -1,0 +1,118 @@
+<table class="table table-bordered table-condensed" style="width:752px;">
+                                      <tr>
+                                      <th>Details Of Reciever </th>
+                                      <th style="width:123px;"> Billed To   </th>
+                                      <th>  Details of Consigne</th>
+                                      <th>Shiped To</th>
+                                      
+                                      </tr>
+                                       
+                                       
+                                   </table>
+                                   <table class="table table-condensed table-bordered" style="width:752px;transform:translateY(-20px);">
+                                       
+                                       <tr>
+                                           <td style="width:363px;">
+                                            <h6>Name:<b contenteditable></b><br>
+                                            Address:<b contenteditable></b><br>
+                                            GSTIN:<b contenteditable></b><br>
+                                            State:<b contenteditable></b><br>
+                                            State Code:<b contenteditable></b><br>
+                                            
+                                
+                                            </h6>
+                                           </td>
+                                           <td>
+                                         
+                                         <h6>Name:<b contenteditable></b><br>
+                                            Address:<b contenteditable></b><br>
+                                            GSTIN:<b contenteditable></b><br>
+                                            State:<b contenteditable></b><br>
+                                            State Code:<b contenteditable></b><br>
+                                               </h6>
+                                
+                                           </td>
+                                       </tr>
+                                       
+                                   </table>
+                                     
+                                    <table class="table table-condensed table-bordered" style="width:752px;transform:translateY(-40px);color:black;border:1px solid black;">
+                                       <thead><tr>
+                                           <th>Sr.No</th>
+                                           <th>Name of Product /Services</th>
+                                           <th>HSN/ACS </th>
+                                           <th>Qty</th>
+                                           <th>Rate</th>
+                                           <th>Amount</th>
+                                           <th>Less:Discount</th>
+                                           <th>Taxable Value</th>
+                                           <th>Total
+                                             </th>
+                                           </tr></thead>
+                                      <tbody id="goods"> 
+                                         <tr>
+                                          <td class="text-center" id="sno">1</td>
+                                           <td contenteditable></td>
+                                           <td contenteditable></td>
+                                           <td type ="number"contenteditable ></td>
+                                           <td contenteditable></td>
+                                           <td contenteditable></td>
+                                           <td contenteditable></td>
+                                           <td contenteditable></td>
+                                           <td></td>
+                                       
+                                       </tr>
+                                        </tbody>
+                                        
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><b>TOTAL</b></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                      
+                                    </table> 
+                                    
+                                    <span style="position:relative;top:-55px;z-index:1000;"> <button id="add" class="btn btn-sm">+</button>
+                                     <button id="delete" class="btn btn-sm">-</button>
+                                    </span>
+                                    <table class="table table-bordered" style="transform:translateY(-90px);width:752px;">
+                                        <tr>
+                                            <th><h6 style="transform:translateX(60px);"><b> Total Invoice Amount In Words:</b></h6></th>
+                                            <th><table class="table table-condensed table-bordered">
+                                            <tr><td>Total Amount Before Tax:   </td>
+                                            
+                                            <td></td></tr>
+                                            <tr><td>Add:CGST   </td><td contenteditable> <b></b>  </td>
+                                            
+                                            <td></td></tr>
+                                            
+                                                <tr><td>Add:SGST   </td>
+                                                <td contenteditable> <b></b>  </td>
+                                            
+                                            <td></td></tr>
+                                            
+                                                <tr>
+                                                <td>Add:IGST   </td>
+                                            
+                                             <td contenteditable> <b></b>  </td>
+                                           <td></td>
+                                           </tr>
+                                            
+                                                <tr><td>Total Amount After Tax:   </td>
+                                            
+                                            <td></td></tr>
+                                            
+                                             <tr><td>GST Payable on Reverse Charge:  </td>
+                                            
+                                            <td></td></tr>
+                                            
+                                            
+                                            </table></th>
+                                        </tr>                                    
+                                    </table>

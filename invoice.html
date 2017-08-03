@@ -1,0 +1,277 @@
+<!Doctype>
+<html>
+   
+   <head>
+       <title>INVOICE EDITOR</title>
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+       
+      <style>
+       *
+{
+	border: 0;
+	box-sizing: content-box;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	vertical-align: top;
+}
+textarea
+          {
+              resize: none;
+              width:55px;
+          }
+/* content editable */
+
+
+/* heading */
+
+
+
+/* table */
+
+
+/* page */
+
+html {  overflow: auto; padding: 0.3in; }
+html { background: #999; cursor: default; }
+
+body { box-sizing: border-box; height: 11in; margin: 0 auto;  padding: 0.1in; width: 8.5in; }
+body { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5); }
+
+/* header */
+
+header { margin: 0 0 3em; }
+header:after { clear: both; content: ""; display: table; }
+
+
+       </style> 
+       
+       
+   </head>
+    
+    
+    
+    <body >
+        
+      
+      <main style="border:1px solid;padding:5px;">
+         
+          
+          
+          <img src="img/IMG_20170731_215209506_BURST000_COVER.png" class="img img-responsive" style="width:70px;">
+            <img src="img/trafo.png"  class="img" style="width:280px;position:relative;top:-66px;left:250px;">
+               
+                           
+          <h6 class="text-center" style="transform:translateY(-65px);">L-19,BAL UDYAN ROAD,UTTAM NAGAR,<br>NEW DELHI-110059,<br>PHONE: <b>9868178917</b>,<br>EMAIL:trafoengineers@gmail.com
+                     <br><b>GSTIN:</b><p style="display:inline;" contentEditable><b>XXXXXXXXXXX</b></p>
+                            </h6>
+                            
+                            <section style="transform:translateY(-70px);">
+                              
+                               <table class="table table-condensed table-bordered table-responsive" style="width:784px;">
+                                   <tr>
+                                       <td colspan="3" class="text-center"><b>INVOICE</b></td>
+                                       <td colspan="1">
+                                       
+                                       </td>
+  <td colspan="2" style="font-size:8px;">
+      <b>  Original for Receipient</b><br>  
+      <b>  Duplicate for Supplier/Transporter</b><br>  
+      <b>Triplicate for Supplier</b><br>  
+                                       </td>
+  
+                                                                    </tr>
+                                   <tr style="font-size:12px;">
+                                       <td colspan="3">
+                                            Reverse Charge:<b contentEditable>YES/NO</b><br>
+                                Invoice No:<b contentEditable>XYZ/17-18/00000</b><br>
+                                Invoice Date:<b contentEditable id="date"><br>
+                                 
+                                <script>
+                                    var f= new Date();
+                             document.querySelector("#date").innerHTML =f.getDate()+"/"+"/"+f.getMonth()+"/"+f.getFullYear();
+                                    
+                                </script>
+                                
+                                <br>
+                                        State Code:<b contenteditable="">12101</b><br>
+                                State:<b contenteditable="">DELHI</b>
+                                </b>     
+                                       </td>
+                                       <td colspan="3">
+                                           Transportation Mode: <b contenteditable="">XXXX</b><br>
+                                           Vechile Number: <b contenteditable="">XXXX</b><br>
+                                           Date Of Supply: <b contenteditable="">29/04/18</b><br>
+                                           Place of Supply: <b contenteditable="">XXXX</b><br>
+                                           Order Number: <b contenteditable="">X---X</b><br>
+                                       </td>
+                                   </tr>
+                                   
+                               </table>
+                                
+                         
+                                
+                                <aside style="transform:translateY(-20px);">
+                                   <table class="table table-bordered table-condensed" style="width:784px;">
+                                      <tr>
+                                      <th>Details Of Reciever </th>
+                                      <th style="width:123px;"> Billed To   </th>
+                                      <th>  Details of Consignee</th>
+                                      <th>Shiped To</th>
+                                      
+                                      </tr>
+                                         <tr>
+                                           <td colspan="2" >
+                                            <h6>Name:<b contenteditable></b><br>
+                                            Address:<b contenteditable></b><br>
+                                            GSTIN:<b contenteditable></b><br>
+                                            State:<b contenteditable></b><br>
+                                            State Code:<b contenteditable></b><br>
+                                            
+                                
+                                            </h6>
+                                           </td>
+                                           <td colspan="2">
+                                         
+                                         <h6>Name:<b contenteditable></b><br>
+                                            Address:<b contenteditable></b><br>
+                                            GSTIN:<b contenteditable></b><br>
+                                            State:<b contenteditable></b><br>
+                                            State Code:<b contenteditable></b><br>
+                                               </h6>
+                                
+                                           </td>
+                                       </tr>
+                                       
+                                       
+                                       
+                                   </table>
+                                 
+		<table  id="items" class="table table-condensed table-bordered table-responsive" style="transform:translateY(-20px);color:black;border:1px solid black;width:784px;">
+	
+		  <tr class="text-center"> 
+		      <th>S.No</th>
+		      <th >Name of Product/Services</th>
+		      <th>HSN/SAC</th>
+		      <th>Rate(₹)</th>
+		      <th style="width:10px;">Qty</th>
+		      <th>Amount(₹)</th>
+		  </tr>
+		 
+		  <tr class="item-row" class="text-center">
+		     <td>1</td>
+              <td class="item-name" contenteditable=""><b>Item<div class="delete-wpr"><b></b><a class="delete" href="javascript:;" title="Remove row">-</a></div></b></td>
+		      <td class="description"  width="180" contenteditable=""><b contenteditable=""></b></td>
+		      <td ><textarea class="cost" conten-editable>650.00</textarea>
+		      <b></b>
+		      </td>
+		      <td><textarea class="qty">1</textarea></td>
+		      <td><span class="price" style="width:80px;">650.00</span></td>
+		  </tr>
+		  
+		 
+		  <tr id="hiderow">
+		    <td colspan="6"><a id="addrow" href="javascript:;" title="Add a row">Add a row</a></td>
+		  </tr>
+		
+		
+           
+		</table>
+                       
+                       <table class="table table-condensed table-bordered"style="transform:translateY(-39px);">
+                             <tr>
+		      <td colspan="3" class="blank"> <h6 class="text-center">Total Invoice Amount in words:</h6>
+		      <h5 contenteditable=""><b contenteditable="">Two Thousand only/</b></h5>
+		       </td>
+		      <td colspan="1" class="total-line"><b style="font-size:14px;">Total amount Before Tax</b></td>
+		      		  
+		      <td class="total-value"colspan="2" ><div id="subtotal" class="content text-center" >875.00</div></td>
+		  </tr>
+		   <tr>
+		      <td colspan="3" class="blank"> </td>
+               <td colspan="1" class="total-line"><b>Discount</b></td>
+
+		      <td class="total-value" colspan="1"><textarea style="height:20px;" id="paid">0.00%</textarea></td>
+		      <td class="total-value balance" colspan="1"><div class="dis"></div></td>
+		  </tr>
+		   <tr>
+		      <td colspan="3" class="blank"> </td>
+               <td colspan="1" class="total-line"><b>CGST</b></td>
+
+		      <td class="total-value" colspan="1"><textarea style="height:20px;" id="cgst">0.00%</textarea></td>
+		      <td class="total-value balance"colspan="1"><div class="cgst"></div></td>
+		  </tr><tr>
+		      <td colspan="3" class="blank"> </td>
+               <td colspan="1" class="total-line"><b>SGST</b></td>
+
+		      <td class="total-value" colspan="1"><textarea style="height:20px;" id="sgst">0.00%</textarea></td>
+		      <td class="total-value balance" colspan="1"><div class="sgst"></div></td>
+		  </tr>
+		  <tr>
+		      <td colspan="3" class="blank"> </td>
+               <td colspan="1" class="total-line"><b>IGST</b></td>
+
+		      <td class="total-value" colspan="1"><textarea style="height:20px;" id="igst">0.00%</textarea></td>
+		      <td class="total-value balance" colspan="1"><div class="igst"></div></td>
+		  </tr>
+		 
+		  <tr>
+
+		      <td colspan="3" class="blank"><b style="position:relative;left:550px;"> ₹</b> </td>
+              <td colspan="1" class="total-line"><b>Total Amount After Tax</b></td>
+              <td class="total-value text-center" colspan="2"><div id="total" class="" style="font-weight:900;"></div></td>
+		  </tr>
+		   <tr>
+
+		      <td colspan="3" class="blank" style="font-size:10px;"> <h6 class="text-center">
+        Bank detail:
+          
+            </h6> 
+              <span><p>Bank Account Number :<b contenteditable="">{{}}</b><br>Bank Branch IFSC:<b contentEditable>{{}}</b></p></span>
+             
+             </td>
+              <td colspan="1" class="total-line"><b style="font-size:10px;">GST Payable on Reverse Charge:</b></td>
+              <td class="total-value text-center" colspan="2" contentEditable><div id="total" class="" style="font-weight:900;"></div></td>
+		  </tr>
+		  
+		  <tr>
+		      <td colspan="3" contenteditable="" style="font-size:7px;">Term and Condition:
+		      </td>
+		      <td colspan="1">Common Seal</td>
+		      <td colspan="2" style="font-size:9px;">Certified that the particular give above are true and correct.
+		      <h5>Trafo engineers</h5>
+		      <br>
+                  <span class="text-center">Authorised Signature</span>
+		      </td>
+		  </tr>
+                           
+                       </table>
+                        
+                                    
+                                 
+                                    
+                                </aside>
+                            </section>
+                            
+                        
+      </main>
+      
+        
+        
+        
+      
+       <script src="jss/jquery-1.3.2.min.js"></script>
+   
+       <script src="jss/calculation.js"></script>
+      
+        
+       
+    </body>
+</html>

@@ -1,0 +1,124 @@
+  .marque>.row>h2
+    {
+        display: inline;
+        padding: 5px;
+        background: rgba(106,171,224,.4);
+        color:white;
+        border-radius: 7px 7px 0px 0px;
+        text-align:center;
+    }
+    
+    .marque>.row>div
+    {
+        height:300px;
+       
+        margin-top:63px;
+     max-width: 1369px;   
+    
+         background:rgba(106,171,224,.4);
+       
+        
+        
+    }
+    
+    .portfolio-item>.item-inner>a
+    {
+    text-decoration:none;
+        transition: all .6s;
+    }
+    
+   
+    .portfolio-item>.item-inner>a>img
+    {
+        transition: all .5s;
+    }
+    
+    .portfolio-item>.item-inner>a>img:hover
+    {
+      filter:grayscale(100%);
+    }
+    
+    .assocation>h1
+    {
+        text-decoration:underline;
+        text-align: center;
+        color:rgba(0,0,0,.2);
+  font-size: 3.5em;
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+    .assocation
+    {
+        background-image: url(img/background-texture/new_year_background.png);
+        padding:20px;
+    }
+    
+  
+    
+  
+   
+    
+     
+
+.fa-5x
+{
+    font-size:90px;
+}
+
+.fa-5x>h4
+{
+    text-align: center;
+}
+
+.choices>.row>.col-lg-3>a
+{
+    text-decoration: none;
+}
+
+.choices>.row>.col-lg-3
+{
+    text-decoration: none;
+    transition:all .5s linear;
+}
+
+.choices>.row>.col-lg-3:hover
+{
+   transition: all .5s;
+    opacity:.6;
+
+}
+
+.data
+{
+    margin:0px;
+    padding: 0px;
+}
+
+.data>.col-lg-6
+{
+    color:rgba(106,171,224,1);
+    background:rgba(230,230,240,.2);
+    height:450px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.data>.col-lg-6>ul>li
+{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.gear,.content
+{
+    position:absolute;
+    
+}
+
+
+
+
+

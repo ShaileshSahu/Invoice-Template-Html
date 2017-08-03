@@ -1,0 +1,73 @@
+  .teacher>.row>.col-lg-3>img
+{
+   width:130px;
+   width:130px;
+    padding: 5px;
+    box-sizing: border-box;
+   
+}
+    
+    .teacher>.row>.col-lg-3
+    {
+       margin-left:10px;
+        background: rgba(255,255,255,1);
+        color:rgba(0,0,0,.5);
+     animation: animate 5s infinite;   
+    
+    }
+    
+    @keyframes animate
+    {
+        0%{border-bottom: 3px solid rgba(106,171,212,.2);}
+        100%{border-bottom: 3px solid rgba(106,171,212,1);}
+    }
+    
+     .teacher>.row>.col-lg-3>div>p
+    {
+        font-size:1.1em;
+        margin-top:7px;
+        line-height: 8px;
+        font-weight: 300;
+       
+    }
+    
+    .dashboard
+    {
+        background: linear-gradient(rgba(106,171,212,.3),rgba(106,171,212,.5));
+        padding: 50px;
+    }
+
+
+.td>.col-lg-3
+{
+    
+    border-right: 5px solid rgba(0,50,100,.5);
+    
+    
+    
+}
+
+.td>.col-lg-3>ul>li
+{
+    background: rgba(255,255,255,.6);
+    margin-top:6px;
+    
+}
+
+.td>.col-lg-3>ul>li.active
+{
+    background:rgba(30,80,50,.5);
+    color:white;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+}
+
+.td>.col-lg-3>ul>li>a
+{
+    font-size: 17px;
+    text-align: justify;
+    
+}
+
+
+ 
+    
